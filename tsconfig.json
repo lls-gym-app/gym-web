@@ -19,8 +19,11 @@
         "name": "next"
       }
     ],
+    "baseUrl": "./src",
     "paths": {
-      "@/*": ["./src/*"]
+      "Modules/*": ["modules/*"],
+      "Shared/*": ["modules/shared/*"],
+      "Layout/*": ["modules/layout/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
