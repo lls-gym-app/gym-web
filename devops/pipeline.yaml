@@ -1,10 +1,10 @@
 
 stages:
-  - stage: build and deploy
+  - stage: BuildAndDeploy
     variables:
       - group: NEXT-WEB-APP
     jobs:
-    - job: publish
+    - job: Publish
       steps:
         - task: AzureStaticWebApp@0
           inputs:
